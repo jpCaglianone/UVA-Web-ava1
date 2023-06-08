@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Pessoas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro de Pessoa</h1>
+    </header>
+
+    <main>
+
+            <table>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" name="nome"></td>
+                </tr>
+                <tr>
+                    <td>Data de Nascimento:</td>
+                    <td><input type="date" name="data_nascimento"></td>
+                </tr>
+                <tr>
+                    <td>Gênero:</td>
+                    <td>
+                        <input type="radio" name="genero" value="Masculino">Masculino
+                        <input type="radio" name="genero" value="Feminino">Feminino
+                        <input type="radio" name="genero" value="Outro">Outro
+                    </td>
+                </tr>
+                <tr>
+                    <td>Idioma:</td>
+                    <td>
+                        <select name="idioma">
+                            <option value="pt">Português</option>
+                            <option value="en">Inglês</option>
+                            <option value="es">Espanhol</option>
+                            <option value="fr">Francês</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>País:</td>
+                    <td>
+                        <select name="pais" size="4">
+                            <option value="br">Brasil</option>
+                            <option value="us">Estados Unidos</option>
+                            <option value="es">Espanha</option>
+                            <option value="fr">França</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Interesses:</td>
+                    <td>
+                        <input type="checkbox" name="interesses" value="esportes">Esportes<br>
+                        <input type="checkbox" name="interesses" value="tecnologia">Tecnologia<br>
+                        <input type="checkbox" name="interesses" value="arte">Arte<br>
+                        <input type="checkbox" name="interesses" value="ciencias">Ciências<br>
+                        <input type="checkbox" name="interesses" value="educacao">Educação<br>
+                        <input type="checkbox" name="interesses" value="negociosEconomia">Negócios e Economia<br>
+                        <input type="checkbox" name="interesses" value="rventos">Arte<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Biografia:</td>
+                    <td>
+                        <textarea name="biografia" rows="4" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Profissão:</td>
+                    <td><input type="text" name="profissao"></td>
+                </tr>
+                <!-- Outros campos opcionais -->
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Telefone:</td>
+                    <td><input type="text" name="telefone"></td>
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input type="text" name="endereco"></td>
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td><input type="text" name="cidade"></td>
+                </tr>
+                <tr>
+                    <td>Estado:</td>
+                    <td><input type="text" name="estado"></td>
+                </tr>
+                <tr>
+                    <td>CEP:</td>
+                    <td><input type="text" name="cep"></td>
+                </tr>
+                <tr>
+                    <td>Estilo Musical:</td>
+                    <td>
+                        <input type="checkbox" name="musicas" value="rock">Rock<br>
+                        <input type="checkbox" name="musicas" value="mpb">MPB<br>
+                        <input type="checkbox" name="musicas" value="samba">Samba<br>
+                        <input type="checkbox" name="musicas" value="axé">Axé<br>
+                        <input type="checkbox" name="musicas" value="gospel">Gospel<br>
+                        <input type="checkbox" name="musicas" value="pop">Pop<br>
+                        <input type="checkbox" id="checkOutros" name="musicas" value="outros">Outros
+                        <input type="text" id="textOutros" name="outrosMusicas" placeholder="outros" disabled>
+                    </td>
+                </tr>
+                </tr>
+            </table>
+
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

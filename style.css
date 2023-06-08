@@ -1,0 +1,20 @@
+
+header{
+    background: darkblue;
+    text-align: center;
+    border-radius: 10px;
+    height: 45px;
+}
+h1{
+    font-family: Tahoma;
+    color: white
+}
+main{
+    margin-top: 25px;
+}
+table{
+    margin: 0 auto;
+}
+td{
+    padding: 3px;
+}
