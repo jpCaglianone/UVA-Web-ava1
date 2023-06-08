@@ -14,7 +14,31 @@ main{
 }
 table{
     margin: 0 auto;
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    padding: 20px ;
 }
 td{
     padding: 3px;
+    border-bottom:1px solid white;
+
 }
+input:hover,
+textarea:hover,
+select:hover{
+    border:3px solid black;
+}
+button{
+    width: 85px;
+    height: 25px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    margin-left: 50px;
+}
+button:hover{
+    cursor: pointer;
+    background: darkblue;
+    color: white;
+    transition: all 0.5s;
+}
+

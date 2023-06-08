@@ -12,7 +12,7 @@
     </header>
 
     <main>
-
+        <form>
             <table>
                 <tr>
                     <td>Nome:</td>
@@ -38,18 +38,35 @@
                             <option value="en">Inglês</option>
                             <option value="es">Espanhol</option>
                             <option value="fr">Francês</option>
+                            <option value="fr">Alemão</option>
+                            <option value="fr">Italiano</option>
+                            <option value="fr">Mandarim</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>País:</td>
                     <td>
-                        <select name="pais" size="4">
+                        <select name="pais" size="4" id="selectPais">
                             <option value="br">Brasil</option>
                             <option value="us">Estados Unidos</option>
                             <option value="es">Espanha</option>
                             <option value="fr">França</option>
+                            <option value="us">EUA</option>
+                            <option value="ag">Argentina</option>
+                            <option value="as">África do Sul</option>
+                            <option value="ch">China</option>
+                            <option value="jp">Japão</option>
+                            <option value="ru">Russia</option>
+                            <option value="an">Angola</option>
+                            <option value="au">Austrália</option>
+                            <option value="ro">Romênia</option>
+                            <option value="su">Suiça</option>
+                            <option value="cl">Chile</option>
+                            <option value="outro" >Outro </option>
                         </select>
+                        <span>Outro: </span>
+                        <input id="textOutroPais" type="text" disabled>
                     </td>
                 </tr>
                 <tr>
@@ -97,7 +114,7 @@
                 </tr>
                 <tr>
                     <td>CEP:</td>
-                    <td><input type="text" name="cep"></td>
+                    <td><input type="number" name="cep" maxlength="9" minlength="9"></td>
                 </tr>
                 <tr>
                     <td>Estilo Musical:</td>
@@ -110,11 +127,12 @@
                         <input type="checkbox" name="musicas" value="pop">Pop<br>
                         <input type="checkbox" id="checkOutros" name="musicas" value="outros">Outros
                         <input type="text" id="textOutros" name="outrosMusicas" placeholder="outros" disabled>
+                        <br><br><br>
+                        <button onsubmit="">Enviar</button>
                     </td>
                 </tr>
-                </tr>
             </table>
-
+        </form>
     </main>
 
     <script src="main.js"></script>

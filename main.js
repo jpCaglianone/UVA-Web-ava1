@@ -1,12 +1,26 @@
-let checkOutros = document.getElementById("checkOutros")
-let textOutros = document.getElementById("textOutros")
+let checkOutrosInteresses = document.getElementById("checkOutros")
+let textOutrosInteresses = document.getElementById("textOutros")
 
-checkOutros.addEventListener("click", () => {
-    if(checkOutros.checked === true){
-        textOutros.disabled = false;
+let selectPais = document.getElementById("selectPais")
+let textOutroPais = document.getElementById("textOutroPais")
+
+
+
+checkOutrosInteresses.addEventListener("click", () => {
+    if(checkOutrosInteresses.checked === true){
+        textOutrosInteresses.disabled = false;
     }
     else {
-        textOutros.disabled = true;
+        textOutrosInteresses.disabled = true;
+    }
+})
+
+selectPais.addEventListener("change", () => {
+    if(selectPais.value === "outro"){
+        textOutroPais.disabled = false;
+    }
+    else {
+        textOutroPais.disabled = true;
     }
 })
 
